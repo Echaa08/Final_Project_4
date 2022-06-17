@@ -1,0 +1,210 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" intergrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uh2+ngUiyzIebhndOJK28anyf" crossorigin="anonymous">
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" class="rel">
+    <style>
+        header{
+            background: url(img/i.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 125px;
+        }
+
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 500px;
+            }
+        }
+
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator{
+            background-color: #00476B;
+            
+        }
+
+    </style>
+    <title>Weather App-Final Project 4</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo">--Final Project 4--</a>
+                
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com/Echa_Ardayanty0811/" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="https://web.facebook.com/profile.php?id=100004890975056" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="https://twitter.com/depdop_" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
+                </ul>
+
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Photo/Grid -->
+    <section class="container section" id="photos">
+        <center><h2 class="light-blue-text text-darken-2">RAMALAN CUACA</h2></center>
+        <div class="row mt-2">
+            <div class="input-group mb-3" >
+                <input type="text" class="form-control input-keyword" id="search" placeholder="Cari Nama Kota/Daerah..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">Cari</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="input-group mb-3 grey" >
+                <div class="container mt-5 result"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/5.jpg" width="100%" class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="section container col_1_of_about-grids span_1_of_about-grids" id="contact">
+        <div class="row">
+        <div class="col s12 l5">
+            <div class="profile-image" >
+                <img class="rounded-image" src="img/echa.jpeg" width="200px" height="200px" border-radius="50%" alt="profile" />
+                <h3 class="light-blue-text text-darken-4">Nurul Cesar Ardayanti</h3>
+                <div class="title">
+                    <h4><p>Teknik Informatika</p></h4>
+                    <h5><p>Universitas Tadulako</p></h5>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/Echa_Ardayanty0811/" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is instagram">
+                        <i class="fab fa-instagram"></i>
+                    <a href="https://web.facebook.com/profile.php?id=100004890975056" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is facebook">
+                        <i class="fab fa-facebook"></i>
+                    <a href="https://twitter.com/EchaArdayanty11" class="tooltipped btn-floating btn-small black darken-4" data-tooltip="This is twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l5 offset-l2">
+            <form>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Pilih tanggal anda membutuhkan saya...</label>
+                </div>
+                <div class="input-field">
+                    <p>Service required</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Photography</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Editing</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+
+                </div>
+                <div class="col s12 l4 offset-l2">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">FINAL PROJECT WEB DEVELOPMENT PROGRAM-HACKTIV8</div>
+            <div class="container center-align"> &copy; --Nurul Cesar Ardayanti--</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+              disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
